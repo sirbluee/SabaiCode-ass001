@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header  -->
+
+    <head>
+        <div class="mx-auto max-w-7xl px-2 py-2 px-8 flex justify-between">
+            <div class="flex">
+                <img src="images/location.png" alt="" class="h-6 w-6">
+                <p class="text-gray-400 px-2">Phnom Penh Hanoi Frienship Blvd. (1019 រាជធានី​ភ្នំពេញ, 12345)</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="relative inline-block text-left">
+                    <button class="inline-flex w-full justify-center rounded-md" id="menu-button" aria-expanded="true"
+                        aria-haspopup="true">Eng
+                        <span class="text-gray-400 px-2">|</span>
+                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <a href="">
+                    <p class="text-gray-700">Sign In</p>
+                </a>
+                <a href="">
+                    <p class="text-gray-700">Sign Up</p>
+                </a>
+            </div>
+        </div>
+    </head>
+
+    <hr class="py-1">
+    <!-- navbar Search -->
+    <section>
+        <div class="flex justify-between mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
+            <div class="">
+                <img class="h-10 w-auto" src="images/logo.png" alt="Your Company">
+            </div>
+            <div class="flex">
+                <div class="relative w-80 flex">
+                    <input type="text"
+                        class="w-full pl-10 pr-4 py-2 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                        placeholder="Search">
+                    <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 50 50">
+                            <path
+                                d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <button class="bg-green-500 w-24 rounded-r-md text-white font-medium">Search</button>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center items-center">
+                <img class="h-5 w-auto" src="images/love.png" alt="Your Company">
+                <span class="text-gray-300">|</span>
+                <div class="flex">
+                    <img class="h-5 w-auto" src="images/shop.png" alt="Your Company">
+                    <span class="text-gray-500 px-2">Shopping Cart 0$</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div>
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="rounded-md bg-green-500 px-3 py-2 text-sm font-medium text-white"
+                                aria-current="page">Home</a>
+                            <div class="relative inline-block text-left">
+                                <button
+                                    class="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                                    id="menu-button" aria-expanded="true" aria-haspopup="true">Shop
+                                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="relative inline-block text-left">
+                                <button
+                                    class="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                                    id="menu-button" aria-expanded="true" aria-haspopup="true">Blog
+                                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <button type="button"
+                        class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">View notifications</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                    </button>
+                    <div class="relative ml-3">
+                        <div>
+                            <button type="button"
+                                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                <img class="h-6 w-6 rounded-full bg-white-700" src="images/phone.png" alt="" />
+                                <p class="text-white"> (+855 70 233 474)</p>
+                            </button>
+                        </div>
+    </nav>
+    <!-- slide content -->
+    <div class="relative w-full max-w-full mx-auto carousel" style="height: 600px;">
+        <div class="carousel-inner flex">
+            <div class="carousel-item">
+                <img src="images/slide (3).jpg" alt="Slide 1" class="w-full h-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slide (2).jpg" alt="Slide 2" class="w-full h-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slide (1).jpg" alt="Slide 3" class="w-full h-auto">
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full opacity-75 hover:opacity-100 transition-opacity"
+            id="prevBtn">
+            &#10094;
+        </button>
+        <button
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full opacity-75 hover:opacity-100 transition-opacity"
+            id="nextBtn">
+            &#10095;
+        </button>
+    </div>
+    <!-- card-content -->
+    <div class="flex justify-between items-center mx-auto max-w-7xl sm:px-6 lg:px-8 py-12">
+        <div class="text-center">
+            <img src="images/card.png" alt="Card" class="h-10 mx-auto mb-4">
+            <h1 class="font-medium mb-2">Free Shipping</h1>
+            <p>Free shipping with discount</p>
+        </div>
+        <div class="text-center">
+            <img src="images/money.png" alt="Card" class="h-10 mx-auto mb-4">
+            <h1 class="font-medium mb-2">Money-Back Guarantee</h1>
+            <p>30 days money-back</p>
+        </div>
+        <div class="text-center">
+            <img src="images/secure.png" alt="Card" class="h-10 mx-auto mb-4">
+            <h1 class="font-medium mb-2">100% Sucure Payment</h1>
+            <p>We ensure your money is save</p>
+        </div>
+        <div class="text-center">
+            <img src="images/support.png" alt="Card" class="h-10 mx-auto mb-4">
+            <h1 class="font-medium mb-2">Great Support 24/7</h1>
+            <p>Instant access to Contact</p>
+        </div>
+    </div>
+    <hr class="py-2  mx-auto max-w-7xl sm:px-6 lg:px-8">
+
+
+    <!-- Categories -->
+    <section>
+        <div class="flex justify-between items-center mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h1 class="text-xl font-bold mb-8">Popular Categories</h1>
+        </div>
+        <div class="flex justify-between mx-auto max-w-7xl sm:px-6 lg:px-8 py-10 gap-8 text-center">
+            <div class="max-w-sm rounded overflow-hidden shadow-md">
+                <img class="w-full" src="images/categories/1.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-md mb-2">Blood Bag</div>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-md">
+                <img class="w-full" src="images/categories/1.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-md mb-2">Blood Bag</div>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-md">
+                <img class="w-full" src="images/categories/1.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-md mb-2">Blood Bag</div>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-md">
+                <img class="w-full" src="images/categories/1.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-md mb-2">Blood Bag</div>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-md">
+                <img class="w-full" src="images/categories/1.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-md mb-2">Blood Bag</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Popular Products -->
+    <section>
+        <div class="flex justify-between items-center mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h1 class="text-xl font-bold mb-8">Popular Products</h1>
+        </div>
+        <div class="flex justify-between items-center mx-auto max-w-7xl sm:px-6 lg:px-8 py-12">
+            <div class="flex justify-between">
+                <div class="max-w-sm rounded shadow-sm">
+                    <div class="rounded-md bg-red-500 absolute m-4">
+                        <p class="text-white p-2">Sale 50%</p>
+                    </div>
+                    <img class="w-full" src="images/product.png" alt="Sunset in the mountains">
+                    <div class="px-6 py-4 flex justify-between">
+                        <div>
+                            <p class="text-gray-500">HealthCare</p>
+                            <h1 class="font-bold text-lg mb-2">Sarasoft AG</h1>
+                            <p class="font-bold text-md mb-2">$ 999.99</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                        <div>
+                            <svg width="64" height="65" viewBox="0 0 64 65" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="32.0979" cy="32.9121" rx="31.8674" ry="32" fill="#F2F2F2" />
+                                <path
+                                    d="M26.8369 30.5H23.0869L20.5869 44.25H43.0869L40.5869 30.5H36.8369M26.8369 30.5V26.75C26.8369 23.9886 29.0755 21.75 31.8369 21.75V21.75C34.5983 21.75 36.8369 23.9886 36.8369 26.75V30.5M26.8369 30.5H36.8369M26.8369 30.5V34.25M36.8369 30.5V34.25"
+                                    stroke="#1A1A1A" stroke-width="1.85644" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded shadow-sm">
+                    <div class="rounded-md bg-red-500 absolute m-4">
+                        <p class="text-white p-2">Sale 50%</p>
+                    </div>
+                    <img class="w-full" src="images/product.png" alt="Sunset in the mountains">
+                    <div class="px-6 py-4 flex justify-between">
+                        <div>
+                            <p class="text-gray-500">HealthCare</p>
+                            <h1 class="font-bold text-lg mb-2">Sarasoft AG</h1>
+                            <p class="font-bold text-md mb-2">$ 999.99</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                        <div>
+                            <svg width="64" height="65" viewBox="0 0 64 65" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="32.0979" cy="32.9121" rx="31.8674" ry="32" fill="#F2F2F2" />
+                                <path
+                                    d="M26.8369 30.5H23.0869L20.5869 44.25H43.0869L40.5869 30.5H36.8369M26.8369 30.5V26.75C26.8369 23.9886 29.0755 21.75 31.8369 21.75V21.75C34.5983 21.75 36.8369 23.9886 36.8369 26.75V30.5M26.8369 30.5H36.8369M26.8369 30.5V34.25M36.8369 30.5V34.25"
+                                    stroke="#1A1A1A" stroke-width="1.85644" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded shadow-sm">
+                    <div class="rounded-md bg-red-500 absolute m-4">
+                        <p class="text-white p-2">Sale 50%</p>
+                    </div>
+                    <img class="w-full" src="images/product.png" alt="Sunset in the mountains">
+                    <div class="px-6 py-4 flex justify-between">
+                        <div>
+                            <p class="text-gray-500">HealthCare</p>
+                            <h1 class="font-bold text-lg mb-2">Sarasoft AG</h1>
+                            <p class="font-bold text-md mb-2">$ 999.99</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                        <div>
+                            <svg width="64" height="65" viewBox="0 0 64 65" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="32.0979" cy="32.9121" rx="31.8674" ry="32" fill="#F2F2F2" />
+                                <path
+                                    d="M26.8369 30.5H23.0869L20.5869 44.25H43.0869L40.5869 30.5H36.8369M26.8369 30.5V26.75C26.8369 23.9886 29.0755 21.75 31.8369 21.75V21.75C34.5983 21.75 36.8369 23.9886 36.8369 26.75V30.5M26.8369 30.5H36.8369M26.8369 30.5V34.25M36.8369 30.5V34.25"
+                                    stroke="#1A1A1A" stroke-width="1.85644" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded shadow-sm">
+                    <div class="rounded-md bg-red-500 absolute m-4">
+                        <p class="text-white p-2">Sale 50%</p>
+                    </div>
+                    <img class="w-full" src="images/product.png" alt="Sunset in the mountains">
+                    <div class="px-6 py-4 flex justify-between">
+                        <div>
+                            <p class="text-gray-500">HealthCare</p>
+                            <h1 class="font-bold text-lg mb-2">Sarasoft AG</h1>
+                            <p class="font-bold text-md mb-2">$ 999.99</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                        <div>
+                            <svg width="64" height="65" viewBox="0 0 64 65" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="32.0979" cy="32.9121" rx="31.8674" ry="32" fill="#F2F2F2" />
+                                <path
+                                    d="M26.8369 30.5H23.0869L20.5869 44.25H43.0869L40.5869 30.5H36.8369M26.8369 30.5V26.75C26.8369 23.9886 29.0755 21.75 31.8369 21.75V21.75C34.5983 21.75 36.8369 23.9886 36.8369 26.75V30.5M26.8369 30.5H36.8369M26.8369 30.5V34.25M36.8369 30.5V34.25"
+                                    stroke="#1A1A1A" stroke-width="1.85644" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- discount card -->
+    <section>
+        <div class="flex justify-between items-center mx-auto max-w-7xl sm:px-6 lg:px-8 py-12 gap-2">
+            <div class="relative">
+                <img src="images/dis (2).png" alt="Sale Image" class="w-full object-cover">
+                <div
+                    class="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-center pt-8">
+                    <p class="text-gray-500 text-sm">Best Deals</p>
+                    <h1 class="text-2xl font-bold mb-4">Sale of the Month</h1>
+                    <div class="mb-4">
+                        <p class="text-xl text-gray-700">00 : 02 : 18 : 46</p>
+                        <p class="text-sm text-gray-700">DAYS HOURS MINS SECS</p>
+                    </div>
+                    <button class="bg-green-500 text-white font-bold rounded-full px-8 py-2">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="images/dis (3).png" alt="Sale Image" class="w-full object-cover">
+                <div
+                    class="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-center pt-8">
+                    <p class="text-gray-500 text-sm">New products</p>
+                    <h1 class="text-2xl font-bold text-white mb-4">Materials Doctor</h1>
+                    <p class="text-gray-700 mb-4 text-white">Started at <span
+                            class="text-red-700 font-bold">$799.99</span>
+                    </p>
+                    <button
+                        class="bg-white text-green-500 border-solid border-2 border-green-500 font-bold rounded-full px-8 py-2">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="images/dis (1).png" alt="Sale Image" class="w-full object-cover">
+                <div
+                    class="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-center pt-8">
+                    <p class="text-gray-500 text-sm">Summer Sale</p>
+                    <h1 class="text-2xl font-bold text-white mb-4">Discount</h1>
+                    <button
+                        class="bg-white text-green-500 border-solid border-2 border-green-500 font-bold rounded-full px-8 py-2">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Blog -->
+    <article class="bg-gray-100 py-12">
+        <div class="flex justify-between items-center mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h1 class="text-xl font-bold mb-8">Daily Blog</h1>
+        </div>
+        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex justify-between gap-2">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <img class="w-full object-cover" src="images/blog1.png" alt="Sunset in the mountains">
+                        <div class="rounded-md bg-white absolute bottom-0 left-0 m-4 text-center px-2">
+                            <p class="text-2xl">18</p>
+                            <p class="text-sm text-gray-700">NOV</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4">
+                        <div class="flex justify-between">
+                            <div class="flex gap-1 justify-center items-center mb-2">
+                                <svg width="18" height="16" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.1587 10.1753L10.1837 16.1503C10.0289 16.3053 9.84506 16.4282 9.64273 16.5121C9.4404 16.596 9.22352 16.6391 9.00449 16.6391C8.78547 16.6391 8.56859 16.596 8.36626 16.5121C8.16393 16.4282 7.98011 16.3053 7.82533 16.1503L0.666992 9.00033V0.666992H9.00033L16.1587 7.82533C16.4691 8.1376 16.6433 8.56002 16.6433 9.00033C16.6433 9.44064 16.4691 9.86306 16.1587 10.1753V10.1753Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.83398 4.83398H4.84232" stroke="#B3B3B3" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-gray-400 text-sm">Food</p>
+                            </div>
+                            <div class="flex gap-1 justify-center items-center">
+                                <svg width="14" height="16" viewBox="0 0 14 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.99935 8.16667C8.8403 8.16667 10.3327 6.67428 10.3327 4.83333C10.3327 2.99238 8.8403 1.5 6.99935 1.5C5.1584 1.5 3.66602 2.99238 3.66602 4.83333C3.66602 6.67428 5.1584 8.16667 6.99935 8.16667Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" />
+                                    <path
+                                        d="M9.4997 10.667H4.4997C2.19804 10.667 0.137203 12.792 1.65137 14.5245C2.68137 15.7028 4.3847 16.5003 6.9997 16.5003C9.6147 16.5003 11.3172 15.7028 12.3472 14.5245C13.8622 12.7912 11.8005 10.667 9.4997 10.667Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" />
+                                </svg>
+
+                                <p class="text-gray-400 text-sm">By Admin</p>
+                            </div>
+                            <div class="flex gap-1 justify-center items-center">
+                                <svg width="18" height="14" viewBox="0 0 18 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.6931 12.3031L9.53563 14.2319C9.4801 14.3244 9.40155 14.401 9.30763 14.4542C9.21371 14.5074 9.10762 14.5353 8.99969 14.5353C8.89176 14.5353 8.78567 14.5074 8.69175 14.4542C8.59783 14.401 8.51928 14.3244 8.46375 14.2319L7.3075 12.3031C7.2519 12.2106 7.17329 12.134 7.07931 12.0809C6.98534 12.0278 6.8792 11.9999 6.77125 12H2.125C1.95924 12 1.80027 11.9342 1.68306 11.8169C1.56585 11.6997 1.5 11.5408 1.5 11.375V1.375C1.5 1.20924 1.56585 1.05027 1.68306 0.933058C1.80027 0.815848 1.95924 0.75 2.125 0.75H15.875C16.0408 0.75 16.1997 0.815848 16.3169 0.933058C16.4342 1.05027 16.5 1.20924 16.5 1.375V11.375C16.5 11.5408 16.4342 11.6997 16.3169 11.8169C16.1997 11.9342 16.0408 12 15.875 12H11.2287C11.1209 12 11.0149 12.0279 10.921 12.0811C10.8272 12.1342 10.7487 12.2107 10.6931 12.3031V12.3031Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-gray-400 text-sm">Comments</p>
+                            </div>
+                        </div>
+                        <p class="text-green-500 text-base">
+                            Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.
+                        </p>
+                        <div class="mt-6 flex gap-4 justify-start items-center">
+                            <p class="text-green-500 text-sm font-medium">Read More</p>
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 7.00098H1" stroke="#008001" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.9502 0.975586L16.0002 6.99959L9.9502 13.0246" stroke="#008001"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <img class="w-full object-cover" src="images/blog2.png" alt="Sunset in the mountains">
+                        <div class="rounded-md bg-white absolute bottom-0 left-0 m-4 text-center px-2">
+                            <p class="text-2xl">18</p>
+                            <p class="text-sm text-gray-700">NOV</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4">
+                        <div class="flex justify-between">
+                            <div class="flex gap-1 justify-center items-center mb-2">
+                                <svg width="18" height="16" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.1587 10.1753L10.1837 16.1503C10.0289 16.3053 9.84506 16.4282 9.64273 16.5121C9.4404 16.596 9.22352 16.6391 9.00449 16.6391C8.78547 16.6391 8.56859 16.596 8.36626 16.5121C8.16393 16.4282 7.98011 16.3053 7.82533 16.1503L0.666992 9.00033V0.666992H9.00033L16.1587 7.82533C16.4691 8.1376 16.6433 8.56002 16.6433 9.00033C16.6433 9.44064 16.4691 9.86306 16.1587 10.1753V10.1753Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.83398 4.83398H4.84232" stroke="#B3B3B3" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-gray-400 text-sm">Food</p>
+                            </div>
+                            <div class="flex gap-1 justify-center items-center">
+                                <svg width="14" height="16" viewBox="0 0 14 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.99935 8.16667C8.8403 8.16667 10.3327 6.67428 10.3327 4.83333C10.3327 2.99238 8.8403 1.5 6.99935 1.5C5.1584 1.5 3.66602 2.99238 3.66602 4.83333C3.66602 6.67428 5.1584 8.16667 6.99935 8.16667Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" />
+                                    <path
+                                        d="M9.4997 10.667H4.4997C2.19804 10.667 0.137203 12.792 1.65137 14.5245C2.68137 15.7028 4.3847 16.5003 6.9997 16.5003C9.6147 16.5003 11.3172 15.7028 12.3472 14.5245C13.8622 12.7912 11.8005 10.667 9.4997 10.667Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" />
+                                </svg>
+
+                                <p class="text-gray-400 text-sm">By Admin</p>
+                            </div>
+                            <div class="flex gap-1 justify-center items-center">
+                                <svg width="18" height="14" viewBox="0 0 18 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.6931 12.3031L9.53563 14.2319C9.4801 14.3244 9.40155 14.401 9.30763 14.4542C9.21371 14.5074 9.10762 14.5353 8.99969 14.5353C8.89176 14.5353 8.78567 14.5074 8.69175 14.4542C8.59783 14.401 8.51928 14.3244 8.46375 14.2319L7.3075 12.3031C7.2519 12.2106 7.17329 12.134 7.07931 12.0809C6.98534 12.0278 6.8792 11.9999 6.77125 12H2.125C1.95924 12 1.80027 11.9342 1.68306 11.8169C1.56585 11.6997 1.5 11.5408 1.5 11.375V1.375C1.5 1.20924 1.56585 1.05027 1.68306 0.933058C1.80027 0.815848 1.95924 0.75 2.125 0.75H15.875C16.0408 0.75 16.1997 0.815848 16.3169 0.933058C16.4342 1.05027 16.5 1.20924 16.5 1.375V11.375C16.5 11.5408 16.4342 11.6997 16.3169 11.8169C16.1997 11.9342 16.0408 12 15.875 12H11.2287C11.1209 12 11.0149 12.0279 10.921 12.0811C10.8272 12.1342 10.7487 12.2107 10.6931 12.3031V12.3031Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-gray-400 text-sm">Comments</p>
+                            </div>
+                        </div>
+                        <p class="text-green-500 text-base">
+                            Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.
+                        </p>
+                        <div class="mt-6 flex gap-4 justify-start items-center">
+                            <p class="text-green-500 text-sm font-medium">Read More</p>
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 7.00098H1" stroke="#008001" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.9502 0.975586L16.0002 6.99959L9.9502 13.0246" stroke="#008001"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <img class="w-full object-cover" src="images/blog3.png" alt="Sunset in the mountains">
+                        <div class="rounded-md bg-white absolute bottom-0 left-0 m-4 text-center px-2">
+                            <p class="text-2xl">18</p>
+                            <p class="text-sm text-gray-700">NOV</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4">
+                        <div class="flex justify-between">
+                            <div class="flex gap-1 justify-center items-center mb-2">
+                                <svg width="18" height="16" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.1587 10.1753L10.1837 16.1503C10.0289 16.3053 9.84506 16.4282 9.64273 16.5121C9.4404 16.596 9.22352 16.6391 9.00449 16.6391C8.78547 16.6391 8.56859 16.596 8.36626 16.5121C8.16393 16.4282 7.98011 16.3053 7.82533 16.1503L0.666992 9.00033V0.666992H9.00033L16.1587 7.82533C16.4691 8.1376 16.6433 8.56002 16.6433 9.00033C16.6433 9.44064 16.4691 9.86306 16.1587 10.1753V10.1753Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.83398 4.83398H4.84232" stroke="#B3B3B3" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-gray-400 text-sm">Food</p>
+                            </div>
+                            <div class="flex gap-1 justify-center items-center">
+                                <svg width="14" height="16" viewBox="0 0 14 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.99935 8.16667C8.8403 8.16667 10.3327 6.67428 10.3327 4.83333C10.3327 2.99238 8.8403 1.5 6.99935 1.5C5.1584 1.5 3.66602 2.99238 3.66602 4.83333C3.66602 6.67428 5.1584 8.16667 6.99935 8.16667Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" />
+                                    <path
+                                        d="M9.4997 10.667H4.4997C2.19804 10.667 0.137203 12.792 1.65137 14.5245C2.68137 15.7028 4.3847 16.5003 6.9997 16.5003C9.6147 16.5003 11.3172 15.7028 12.3472 14.5245C13.8622 12.7912 11.8005 10.667 9.4997 10.667Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" />
+                                </svg>
+
+                                <p class="text-gray-400 text-sm">By Admin</p>
+                            </div>
+                            <div class="flex gap-1 justify-center items-center">
+                                <svg width="18" height="14" viewBox="0 0 18 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.6931 12.3031L9.53563 14.2319C9.4801 14.3244 9.40155 14.401 9.30763 14.4542C9.21371 14.5074 9.10762 14.5353 8.99969 14.5353C8.89176 14.5353 8.78567 14.5074 8.69175 14.4542C8.59783 14.401 8.51928 14.3244 8.46375 14.2319L7.3075 12.3031C7.2519 12.2106 7.17329 12.134 7.07931 12.0809C6.98534 12.0278 6.8792 11.9999 6.77125 12H2.125C1.95924 12 1.80027 11.9342 1.68306 11.8169C1.56585 11.6997 1.5 11.5408 1.5 11.375V1.375C1.5 1.20924 1.56585 1.05027 1.68306 0.933058C1.80027 0.815848 1.95924 0.75 2.125 0.75H15.875C16.0408 0.75 16.1997 0.815848 16.3169 0.933058C16.4342 1.05027 16.5 1.20924 16.5 1.375V11.375C16.5 11.5408 16.4342 11.6997 16.3169 11.8169C16.1997 11.9342 16.0408 12 15.875 12H11.2287C11.1209 12 11.0149 12.0279 10.921 12.0811C10.8272 12.1342 10.7487 12.2107 10.6931 12.3031V12.3031Z"
+                                        stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-gray-400 text-sm">Comments</p>
+                            </div>
+                        </div>
+                        <p class="text-green-500 text-base">
+                            Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.
+                        </p>
+                        <div class="mt-6 flex gap-4 justify-start items-center">
+                            <p class="text-green-500 text-sm font-medium">Read More</p>
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 7.00098H1" stroke="#008001" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.9502 0.975586L16.0002 6.99959L9.9502 13.0246" stroke="#008001"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- brand card -->
+    <section>
+        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-12">
+            <div class="flex justify-between">
+                <div>
+                    <img src="images/icons/steps.png" alt="">
+                </div>
+                <div>
+                    <img src="images/icons/mango.png" alt="">
+                </div>
+                <div>
+                    <img src="images/icons/food.png" alt="">
+                </div>
+                <div>
+                    <img src="images/icons/foods.png" alt="">
+                </div>
+                <div>
+                    <img src="images/icons/book-off.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="">
+        <section>
+            <div class="bg-gray-200 w-full h-16 mt-6 flex items-center justify-center">
+                <div class="flex justify-between mx-auto max-w-7xl sm:px-6 lg:px-8 w-full">
+                    <div class="flex gap-4 items-center">
+                        <p>Term</p>
+                        <p>Privacy</p>
+                        <p>Cookies</p>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <img class="h-6" src="images/icons/facebook.png" alt="">
+                        <img class="h-6" src="images/icons/twitter.png" alt="">
+                        <img class="h-6" src="images/icons/pinterest.png" alt="">
+                        <img class="h-6" src="images/icons/instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main footer -->
+        <section class="bg-gray-800 text-white py-10">
+            <div class="flex justify-between items-center mx-auto max-w-7xl sm:px-6 lg:px-8 py-12">
+                <div>
+                    <div class="container mx-auto px-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <!-- My Account Section -->
+                            <div>
+                                <h2 class="font-bold mb-4">My Account</h2>
+                                <ul>
+                                    <li><a href="#" class="hover:underline">My Account</a></li>
+                                    <li><a href="#" class="hover:underline">Order History</a></li>
+                                    <li><a href="#" class="hover:underline">Wishlist</a></li>
+                                    <li><a href="#" class="hover:underline">Track Order</a></li>
+                                </ul>
+                            </div>
+                            <!-- Support Section -->
+                            <div>
+                                <h2 class="font-bold mb-4">Support</h2>
+                                <ul>
+                                    <li><a href="#" class="hover:underline">Helps</a></li>
+                                    <li><a href="#" class="hover:underline">Contact</a></li>
+                                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                                    <li><a href="#" class="hover:underline">Terms & Condition</a></li>
+                                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <!-- Categories Section -->
+                            <div>
+                                <h2 class="font-bold mb-4">Categories</h2>
+                                <ul>
+                                    <li><a href="#" class="hover:underline">Fruit & Vegetables</a></li>
+                                    <li><a href="#" class="hover:underline">Meat & Fish</a></li>
+                                    <li><a href="#" class="hover:underline">Bread & Bakery</a></li>
+                                    <li><a href="#" class="hover:underline">Beauty & Health</a></li>
+                                </ul>
+                            </div>
+                            <!-- Contact Section -->
+                            <div>
+                                <h2 class="font-bold mb-4">Contact</h2>
+                                <p class="mb-2">Office: (+855) 088 5654 093</p>
+                                <p class="mb-2">Support: <a href="mailto:info@medi.com"
+                                        class="underline">info@medi.com</a></p>
+                                <p class="mb-4">Address: No.2A, Down Town Road No 7, Phum Kork Chambak, Phnom Penh</p>
+                            </div>
+                        </div>
+                        <div class="mt-10 text-center border-t border-gray-700 pt-4">
+                            <p class="text-sm">Developed by Digital Solution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
